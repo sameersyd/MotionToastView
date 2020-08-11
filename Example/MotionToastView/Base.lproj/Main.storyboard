@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +17,97 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83m-B5-asE">
+                                <rect key="frame" x="3" y="219.5" width="369" height="228"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNT-NJ-rQf">
+                                        <rect key="frame" x="109.5" y="0.0" width="150" height="45"/>
+                                        <color key="backgroundColor" red="0.56862745100000001" green="0.61176470589999998" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="5RV-jm-EqX"/>
+                                            <constraint firstAttribute="width" constant="150" id="hqb-6P-ZQb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="Success">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="successButt:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iu9-aZ-XSi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpX-xi-gRH">
+                                        <rect key="frame" x="109.5" y="61" width="150" height="45"/>
+                                        <color key="backgroundColor" red="0.56862745100000001" green="0.61176470589999998" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="Nht-aZ-bOn"/>
+                                            <constraint firstAttribute="height" constant="45" id="bsh-T1-bcR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="Error">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="errorButt:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uhP-Op-u1J"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ap-07-C51">
+                                        <rect key="frame" x="109.5" y="122" width="150" height="45"/>
+                                        <color key="backgroundColor" red="0.56862745100000001" green="0.61176470589999998" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="duK-En-VHZ"/>
+                                            <constraint firstAttribute="width" constant="150" id="t0h-uc-pFs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="Warning">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="warningButt:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="d5d-ug-Ahu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Z0-d5-01a">
+                                        <rect key="frame" x="109.5" y="183" width="150" height="45"/>
+                                        <color key="backgroundColor" red="0.56862745100000001" green="0.61176470589999998" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="7H8-GX-SaO"/>
+                                            <constraint firstAttribute="height" constant="45" id="RNx-2h-vVJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="Info">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="infoButt:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4Dx-uE-vjT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="bpX-xi-gRH" firstAttribute="centerX" secondItem="83m-B5-asE" secondAttribute="centerX" id="95h-k2-Z1a"/>
+                                    <constraint firstItem="3Ap-07-C51" firstAttribute="centerX" secondItem="83m-B5-asE" secondAttribute="centerX" id="Dni-n6-lEy"/>
+                                    <constraint firstItem="bpX-xi-gRH" firstAttribute="top" secondItem="TNT-NJ-rQf" secondAttribute="bottom" constant="16" id="Mwb-Ht-mqx"/>
+                                    <constraint firstItem="5Z0-d5-01a" firstAttribute="centerX" secondItem="83m-B5-asE" secondAttribute="centerX" id="Wy6-1w-ZLp"/>
+                                    <constraint firstAttribute="bottom" secondItem="5Z0-d5-01a" secondAttribute="bottom" id="eLI-dG-98t"/>
+                                    <constraint firstItem="3Ap-07-C51" firstAttribute="top" secondItem="bpX-xi-gRH" secondAttribute="bottom" constant="16" id="jac-wi-nTk"/>
+                                    <constraint firstItem="TNT-NJ-rQf" firstAttribute="centerX" secondItem="83m-B5-asE" secondAttribute="centerX" id="knK-9M-buT"/>
+                                    <constraint firstItem="TNT-NJ-rQf" firstAttribute="top" secondItem="83m-B5-asE" secondAttribute="top" id="w9c-jI-2MR"/>
+                                    <constraint firstItem="5Z0-d5-01a" firstAttribute="top" secondItem="3Ap-07-C51" secondAttribute="bottom" constant="16" id="wSJ-xM-dJD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="83m-B5-asE" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="KiS-pf-kyF"/>
+                            <constraint firstItem="83m-B5-asE" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="N3y-sT-c3n"/>
+                            <constraint firstItem="83m-B5-asE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="3" id="err-mS-Jds"/>
+                            <constraint firstAttribute="trailing" secondItem="83m-B5-asE" secondAttribute="trailing" constant="3" id="uYj-r1-bKQ"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="135" y="134"/>
         </scene>
     </scenes>
 </document>

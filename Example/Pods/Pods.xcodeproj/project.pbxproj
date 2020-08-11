@@ -10,13 +10,17 @@
 		02DED371D739CE8F05497AF7BF843B13 /* MotionToastView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6E18C2F206F39FE69CFFDABBC00335E /* MotionToastView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		37F9ADE848554FE29F16F5C06C150312 /* Pods-MotionToastView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EBE7D0B134E4BE87CC93DBF06378FD4 /* Pods-MotionToastView_Example-dummy.m */; };
 		51A0FC883931E7C4462DEF1E736394DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		73B33FE224E2D04000A31B71 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B33FDC24E2D04000A31B71 /* Extension.swift */; };
+		73B33FE324E2D04000A31B71 /* MTPale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B33FDE24E2D04000A31B71 /* MTPale.swift */; };
+		73B33FE524E2D04000A31B71 /* MTVibrant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B33FE024E2D04000A31B71 /* MTVibrant.swift */; };
+		73B33FF124E2EC1500A31B71 /* MTPale.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73B33FEF24E2EC1500A31B71 /* MTPale.xib */; };
+		73B33FF224E2EC1500A31B71 /* MTVibrant.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73B33FF024E2EC1500A31B71 /* MTVibrant.xib */; };
 		A654D997E6191124E1C813518B66BF9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		B3E0502A15C5F1BCE3EC50EFD5EDAFE4 /* Pods-MotionToastView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A0884BDA40E854D4F6FEE47C2967218 /* Pods-MotionToastView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B48F65AC554EAA4AAA279B602E6E69A9 /* Pods-MotionToastView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE7885F63671799B1C2441F8992FB9C /* Pods-MotionToastView_Tests-dummy.m */; };
 		BC883FC42CA1979898809A132FC2B6B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		BFE03579E051E2E0AEB5AEA61CE875FB /* Pods-MotionToastView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EF5776D2842F02C0EF153277AF67872F /* Pods-MotionToastView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D5053594044BD524B10DF5A9B7D12A60 /* MotionToastView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C816EBCFF35E98B6B9F099C9797625DC /* MotionToastView-dummy.m */; };
-		EE6AB49B90654E51BA3B6015902E22FD /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2287F669AF9860B2DCCC9EDB0EBAF5EB /* ReplaceMe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,28 +44,32 @@
 		0419D937C32235E777771A9339CE70A6 /* Pods-MotionToastView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MotionToastView_Tests-Info.plist"; sourceTree = "<group>"; };
 		078209C791AD1FD37E74872CA35041C2 /* Pods-MotionToastView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MotionToastView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1CCBA19D6837AEF4CCBA7B2544E15C4B /* MotionToastView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MotionToastView.modulemap; sourceTree = "<group>"; };
-		2287F669AF9860B2DCCC9EDB0EBAF5EB /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = MotionToastView/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
 		245F5E6052CFF22C79ECD561E2B53BA9 /* Pods-MotionToastView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MotionToastView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		36262E12B307C9E8C6CB8F92B95009C2 /* MotionToastView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MotionToastView-Info.plist"; sourceTree = "<group>"; };
-		38949DF622015B9A8C7DB2DD58EC4F41 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		38949DF622015B9A8C7DB2DD58EC4F41 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		3A0884BDA40E854D4F6FEE47C2967218 /* Pods-MotionToastView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MotionToastView_Example-umbrella.h"; sourceTree = "<group>"; };
 		3CD47CC56AB30A6CA2F70DD8DFFA98E3 /* Pods-MotionToastView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MotionToastView_Example-Info.plist"; sourceTree = "<group>"; };
 		448740457A66D530C716E215CFA29D09 /* Pods-MotionToastView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MotionToastView_Example.modulemap"; sourceTree = "<group>"; };
 		4FD9093ABA28C24C0D87D4925FB0D434 /* Pods-MotionToastView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MotionToastView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		63556D3F9B78112AB0F6F8F4951E50E5 /* Pods-MotionToastView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MotionToastView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		672DA88812BC5D56846BDAC0CA5EEE9B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		672DA88812BC5D56846BDAC0CA5EEE9B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6A49FE31F4FED1ED792315C8CEEC845B /* MotionToastView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MotionToastView-prefix.pch"; sourceTree = "<group>"; };
-		75AAAAE2F4076B21425008E76A889A4F /* Pods_MotionToastView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MotionToastView_Example.framework; path = "Pods-MotionToastView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73B33FDC24E2D04000A31B71 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		73B33FDE24E2D04000A31B71 /* MTPale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTPale.swift; sourceTree = "<group>"; };
+		73B33FE024E2D04000A31B71 /* MTVibrant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTVibrant.swift; sourceTree = "<group>"; };
+		73B33FEF24E2EC1500A31B71 /* MTPale.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTPale.xib; sourceTree = "<group>"; };
+		73B33FF024E2EC1500A31B71 /* MTVibrant.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTVibrant.xib; sourceTree = "<group>"; };
+		75AAAAE2F4076B21425008E76A889A4F /* Pods_MotionToastView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MotionToastView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		780A31969A189690A2AD7A7533511818 /* Pods-MotionToastView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MotionToastView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EBE7D0B134E4BE87CC93DBF06378FD4 /* Pods-MotionToastView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MotionToastView_Example-dummy.m"; sourceTree = "<group>"; };
 		A6E18C2F206F39FE69CFFDABBC00335E /* MotionToastView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MotionToastView-umbrella.h"; sourceTree = "<group>"; };
 		A9CC327590FE7B635B9F47AD0F003B65 /* MotionToastView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MotionToastView.debug.xcconfig; sourceTree = "<group>"; };
 		BAD556380728939919275BA69393F4BE /* Pods-MotionToastView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MotionToastView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BF703DAE6FB1D1E47E83F8A40935147B /* MotionToastView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MotionToastView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C2DB8587F9EA840BFDA0B46D6A6E6F4A /* Pods_MotionToastView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MotionToastView_Tests.framework; path = "Pods-MotionToastView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C66FDF296BFF272D578C8D43CF733FA8 /* MotionToastView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MotionToastView.framework; path = MotionToastView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF703DAE6FB1D1E47E83F8A40935147B /* MotionToastView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MotionToastView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C2DB8587F9EA840BFDA0B46D6A6E6F4A /* Pods_MotionToastView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MotionToastView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C66FDF296BFF272D578C8D43CF733FA8 /* MotionToastView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MotionToastView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76596112BBB93C679D05587632718DC /* Pods-MotionToastView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MotionToastView_Tests.modulemap"; sourceTree = "<group>"; };
 		C816EBCFF35E98B6B9F099C9797625DC /* MotionToastView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MotionToastView-dummy.m"; sourceTree = "<group>"; };
 		CFFD3B490BA5BC87DEFA5F13A29506B3 /* Pods-MotionToastView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MotionToastView_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +141,26 @@
 			);
 			name = "Pods-MotionToastView_Tests";
 			path = "Target Support Files/Pods-MotionToastView_Tests";
+			sourceTree = "<group>";
+		};
+		73B33FDB24E2CF7100A31B71 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				73B33FDC24E2D04000A31B71 /* Extension.swift */,
+				73B33FDD24E2D04000A31B71 /* MotionToastStyles */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		73B33FDD24E2D04000A31B71 /* MotionToastStyles */ = {
+			isa = PBXGroup;
+			children = (
+				73B33FEF24E2EC1500A31B71 /* MTPale.xib */,
+				73B33FF024E2EC1500A31B71 /* MTVibrant.xib */,
+				73B33FDE24E2D04000A31B71 /* MTPale.swift */,
+				73B33FE024E2D04000A31B71 /* MTVibrant.swift */,
+			);
+			path = MotionToastStyles;
 			sourceTree = "<group>";
 		};
 		7A1142684E9B36FED548DA7A47DC5888 /* Pod */ = {
@@ -215,7 +243,7 @@
 		D7E1FAFAB5CC3B87DE77E227E67126C3 /* MotionToastView */ = {
 			isa = PBXGroup;
 			children = (
-				2287F669AF9860B2DCCC9EDB0EBAF5EB /* ReplaceMe.swift */,
+				73B33FDB24E2CF7100A31B71 /* Source */,
 				7A1142684E9B36FED548DA7A47DC5888 /* Pod */,
 				BC08722EE89834BC7BF67CB4C2958AF2 /* Support Files */,
 			);
@@ -317,6 +345,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					CD0C8392CE9553EFD7B2D911F805A8AE = {
+						LastSwiftMigration = 1150;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -357,6 +390,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73B33FF124E2EC1500A31B71 /* MTPale.xib in Resources */,
+				73B33FF224E2EC1500A31B71 /* MTVibrant.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,8 +402,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73B33FE324E2D04000A31B71 /* MTPale.swift in Sources */,
+				73B33FE524E2D04000A31B71 /* MTVibrant.swift in Sources */,
 				D5053594044BD524B10DF5A9B7D12A60 /* MotionToastView-dummy.m in Sources */,
-				EE6AB49B90654E51BA3B6015902E22FD /* ReplaceMe.swift in Sources */,
+				73B33FE224E2D04000A31B71 /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +459,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MotionToastView_Example/Pods-MotionToastView_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MotionToastView_Example/Pods-MotionToastView_Example.modulemap";
@@ -455,7 +492,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MotionToastView_Tests/Pods-MotionToastView_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MotionToastView_Tests/Pods-MotionToastView_Tests.modulemap";
@@ -477,6 +514,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FF8AC92E2D3F2057CEA068E05974C3FE /* MotionToastView.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -489,7 +527,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MotionToastView/MotionToastView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MotionToastView/MotionToastView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MotionToastView/MotionToastView.modulemap";
 				PRODUCT_MODULE_NAME = MotionToastView;
@@ -497,7 +535,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -521,7 +559,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MotionToastView_Example/Pods-MotionToastView_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MotionToastView_Example/Pods-MotionToastView_Example.modulemap";
@@ -587,13 +625,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -650,7 +687,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -679,7 +716,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-MotionToastView_Tests/Pods-MotionToastView_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-MotionToastView_Tests/Pods-MotionToastView_Tests.modulemap";
@@ -700,6 +737,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A9CC327590FE7B635B9F47AD0F003B65 /* MotionToastView.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -712,7 +750,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/MotionToastView/MotionToastView-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/MotionToastView/MotionToastView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/MotionToastView/MotionToastView.modulemap";
 				PRODUCT_MODULE_NAME = MotionToastView;
@@ -720,7 +758,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
