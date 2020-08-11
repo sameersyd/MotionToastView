@@ -30,14 +30,14 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '13.0'
 
-  s.source_files = 'MotionToastView/Classes/**/*'
+  s.source_files = 'Source/**/**'
   s.swift_version = '5.0'
   s.platforms = {
     "ios": "13.0"
   }
   
   s.resource_bundles = {
-    'MotionToastView' => ['MotionToastView/Source/Assets/**']
+    'MotionToastView' => ['Source/Assets/**']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
