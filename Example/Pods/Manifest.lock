@@ -1,0 +1,16 @@
+PODS:
+  - MotionToastView (0.1.0)
+
+DEPENDENCIES:
+  - MotionToastView (from `../`)
+
+EXTERNAL SOURCES:
+  MotionToastView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MotionToastView: 7cc1b9eb09dba856dcdc12e55c97269f20602c57
+
+PODFILE CHECKSUM: 44561815f7e0cfda2d58a3b6e754de654be55e2e
+
+COCOAPODS: 1.9.0

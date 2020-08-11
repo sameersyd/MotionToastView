@@ -1,0 +1,22 @@
+{
+  "name": "MotionToastView",
+  "version": "0.1.0",
+  "summary": "A short description of MotionToastView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/sameersyd/MotionToastView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "sameersyd": "sameer.nwaz@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/sameersyd/MotionToastView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "MotionToastView/Classes/**/*"
+}
