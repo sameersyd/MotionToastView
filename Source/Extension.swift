@@ -155,14 +155,6 @@ func toastStyle_pale(message: String, toastType: ToastType, toastGravity: ToastG
     return toastView
 }
 
-func bundledImage(named: String, view: UIView) -> UIImage? {
-    let image = UIImage(named: named)
-    if image == nil {
-        return UIImage(named: named, inBundle: Bundle(forClass: MyBasePodClass.classForCoder()), compatibleWithTraitCollection: nil)
-    } // Replace MyBasePodClass with yours
-    return image
-}
-
 extension UIColor {
     convenience init(hex: String, alpha: CGFloat = 1.0) {
         var hexFormatted: String = hex.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).uppercased()
