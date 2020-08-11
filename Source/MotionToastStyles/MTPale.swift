@@ -46,4 +46,37 @@ class MTPale: UIView {
         addSubview(viewFromXib)
     }
     
+    func setupViews(toastType: ToastType) {
+        let bundle = Bundle(for: MTPale.self)
+        switch toastType {
+            case .success:
+                headLabel.text = "Success"
+                circleImg.image = UIImage(named: "success_icon_white", in: bundle, compatibleWith: nil)!
+                sideBarView.backgroundColor = UIColor(hex: "6FCF97")
+                circleView.backgroundColor = UIColor(hex: "6FCF97")
+                toastView.backgroundColor = UIColor(named: "alpha_green_dark", in: bundle, compatibleWith: nil)!
+                break
+            case .error:
+                headLabel.text = "Error"
+                circleImg.image = UIImage(named: "error_icon_white", in: bundle, compatibleWith: nil)!
+                sideBarView.backgroundColor = UIColor(hex: "EB5757")
+                circleView.backgroundColor = UIColor(hex: "EB5757")
+                toastView.backgroundColor = UIColor(named: "alpha_red_dark", in: bundle, compatibleWith: nil)!
+                break
+            case .warning:
+                headLabel.text = "Warning"
+                circleImg.image = UIImage(named: "warning_icon_white", in: bundle, compatibleWith: nil)!
+                sideBarView.backgroundColor = UIColor(hex: "F2C94C")
+                circleView.backgroundColor = UIColor(hex: "F2C94C")
+                toastView.backgroundColor = UIColor(named: "alpha_yellow_dark", in: bundle, compatibleWith: nil)!
+                break
+            case .info:
+                headLabel.text = "Info"
+                circleImg.image = UIImage(named: "info_icon_white", in: bundle, compatibleWith: nil)!
+                sideBarView.backgroundColor = UIColor(hex: "2F80ED")
+                circleView.backgroundColor = UIColor(hex: "2F80ED")
+                toastView.backgroundColor = UIColor(named: "alpha_blue_dark", in: bundle, compatibleWith: nil)!
+                break
+        }
+    }
 }

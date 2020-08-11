@@ -26,15 +26,15 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'sameersyd' => 'sameer.nwaz@gmail.com' }
   s.source           = { :git => 'https://github.com/sameersyd/MotionToastView.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/syd_sameer'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'MotionToastView/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'MotionToastView' => ['MotionToastView/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'MotionToastView' => ['MotionToastView/Source/Assets/**']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
