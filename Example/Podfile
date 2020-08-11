@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MotionToastView_Example' do
+  pod 'MotionToastView', :path => '../'
+
+  target 'MotionToastView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
