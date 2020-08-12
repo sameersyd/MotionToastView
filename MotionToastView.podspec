@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MotionToastView'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = 'A Beautiful Toast Library for iOS Swift'
 
 # This description is used to generate tags and improve search results.
@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
   }
   
   s.resource_bundles = {
-    'MotionToastView' => ['Source/**/**']
+    'MotionToastView' => ['MotionToastView/**']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
