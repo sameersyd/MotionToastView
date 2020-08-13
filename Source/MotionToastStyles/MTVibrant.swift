@@ -44,7 +44,7 @@ class MTVibrant: UIView {
     }
     
     func setupViews(toastType: ToastType) {
-        let bundle = Bundle(for: MTVibrant.self)
+        let bundle = Bundle(for: type(of: self))
         switch toastType {
             case .success:
                 headLabel.text = "Success"
