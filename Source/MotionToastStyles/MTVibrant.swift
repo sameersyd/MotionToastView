@@ -44,31 +44,30 @@ class MTVibrant: UIView {
     }
     
     func setupViews(toastType: ToastType) {
-        let bundle = Bundle(for: type(of: self))
         switch toastType {
             case .success:
                 headLabel.text = "Success"
-                headLabel.textColor = UIColor(named: "white_green", in: bundle, compatibleWith: nil)!
+                headLabel.textColor = loadColor(name: "white_green")
                 circleImg.image = loadImage(name: "success_icon")
-                toastView.backgroundColor = UIColor(named: "green_dark", in: bundle, compatibleWith: nil)!
+                toastView.backgroundColor = loadColor(name: "green_dark")
                 break
             case .error:
                 headLabel.text = "Error"
-                headLabel.textColor = UIColor(named: "white_red", in: bundle, compatibleWith: nil)!
+                headLabel.textColor = loadColor(name: "white_red")
                 circleImg.image = loadImage(name: "error_icon")
-                toastView.backgroundColor = UIColor(named: "red_dark", in: bundle, compatibleWith: nil)!
+                toastView.backgroundColor = loadColor(name: "red_dark")
                 break
             case .warning:
                 headLabel.text = "Warning"
-                headLabel.textColor = UIColor(named: "white_yellow", in: bundle, compatibleWith: nil)!
+                headLabel.textColor = loadColor(name: "white_yellow")
                 circleImg.image = loadImage(name: "warning_icon")
-                toastView.backgroundColor = UIColor(named: "yellow_dark", in: bundle, compatibleWith: nil)!
+                toastView.backgroundColor = loadColor(name: "yellow_dark")
                 break
             case .info:
                 headLabel.text = "Info"
-                headLabel.textColor = UIColor(named: "white_blue", in: bundle, compatibleWith: nil)!
+                headLabel.textColor = loadColor(name: "white_blue")
                 circleImg.image = loadImage(name: "info_icon")
-                toastView.backgroundColor = UIColor(named: "blue_dark", in: bundle, compatibleWith: nil)!
+                toastView.backgroundColor = loadColor(name: "blue_dark")
                 break
         }
     }
@@ -79,7 +78,17 @@ class MTVibrant: UIView {
             let bundle = Bundle(url: url)
             return UIImage(named: name, in: bundle, compatibleWith: nil)
         }
-        print("MotionToastView")
+        print("MotionToastView Image")
+        return nil
+    }
+    
+    func loadColor(name: String) -> UIColor? {
+        let podBundle = Bundle(for: MTVibrant.self)
+        if let url = podBundle.url(forResource: "MotionToastView", withExtension: "bundle") {
+            let bundle = Bundle(url: url)
+            return UIColor(named: name, in: bundle, compatibleWith: nil)
+        }
+        print("MotionToastView Color")
         return nil
     }
 }

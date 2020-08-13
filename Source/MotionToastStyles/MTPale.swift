@@ -47,35 +47,34 @@ class MTPale: UIView {
     }
     
     func setupViews(toastType: ToastType) {
-        let bundle = Bundle(for: type(of: self))
         switch toastType {
             case .success:
                 headLabel.text = "Success"
                 circleImg.image = loadImage(name: "success_icon_white")
                 sideBarView.backgroundColor = UIColor(hex: "6FCF97")
                 circleView.backgroundColor = UIColor(hex: "6FCF97")
-                toastView.backgroundColor = UIColor(named: "alpha_green_dark", in: bundle, compatibleWith: nil)!
+                toastView.backgroundColor = loadColor(name: "alpha_green_dark")
                 break
             case .error:
                 headLabel.text = "Error"
                 circleImg.image = loadImage(name: "error_icon_white")
                 sideBarView.backgroundColor = UIColor(hex: "EB5757")
                 circleView.backgroundColor = UIColor(hex: "EB5757")
-                toastView.backgroundColor = UIColor(named: "alpha_red_dark", in: bundle, compatibleWith: nil)!
+                toastView.backgroundColor = loadColor(name: "alpha_red_dark")
                 break
             case .warning:
                 headLabel.text = "Warning"
                 circleImg.image = loadImage(name: "warning_icon_white")
                 sideBarView.backgroundColor = UIColor(hex: "F2C94C")
                 circleView.backgroundColor = UIColor(hex: "F2C94C")
-                toastView.backgroundColor = UIColor(named: "alpha_yellow_dark", in: bundle, compatibleWith: nil)!
+                toastView.backgroundColor = UIColor(hex: "456789")
                 break
             case .info:
                 headLabel.text = "Info"
                 circleImg.image = loadImage(name: "info_icon_white")
                 sideBarView.backgroundColor = UIColor(hex: "2F80ED")
                 circleView.backgroundColor = UIColor(hex: "2F80ED")
-                toastView.backgroundColor = UIColor(named: "alpha_blue_dark", in: bundle, compatibleWith: nil)!
+                toastView.backgroundColor = loadColor(name: "alpha_blue_dark")
                 break
         }
     }
@@ -86,8 +85,17 @@ class MTPale: UIView {
             let bundle = Bundle(url: url)
             return UIImage(named: name, in: bundle, compatibleWith: nil)
         }
-        print("MotionToastView")
+        print("MotionToastView Image")
         return nil
     }
     
+    func loadColor(name: String) -> UIColor? {
+        let podBundle = Bundle(for: MTPale.self)
+        if let url = podBundle.url(forResource: "MotionToastView", withExtension: "bundle") {
+            let bundle = Bundle(url: url)
+            return UIColor(named: name, in: bundle, compatibleWith: nil)
+        }
+        print("MotionToastView Color")
+        return nil
+    }
 }
