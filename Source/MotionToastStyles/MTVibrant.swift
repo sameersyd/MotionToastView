@@ -49,27 +49,37 @@ class MTVibrant: UIView {
             case .success:
                 headLabel.text = "Success"
                 headLabel.textColor = UIColor(named: "white_green", in: bundle, compatibleWith: nil)!
-                circleImg.image = UIImage(named: "success_icon", in: bundle, compatibleWith: nil)!
+                circleImg.image = loadImage(name: "success_icon")
                 toastView.backgroundColor = UIColor(named: "green_dark", in: bundle, compatibleWith: nil)!
                 break
             case .error:
                 headLabel.text = "Error"
                 headLabel.textColor = UIColor(named: "white_red", in: bundle, compatibleWith: nil)!
-                circleImg.image = UIImage(named: "error_icon", in: bundle, compatibleWith: nil)!
+                circleImg.image = loadImage(name: "error_icon")
                 toastView.backgroundColor = UIColor(named: "red_dark", in: bundle, compatibleWith: nil)!
                 break
             case .warning:
                 headLabel.text = "Warning"
                 headLabel.textColor = UIColor(named: "white_yellow", in: bundle, compatibleWith: nil)!
-                circleImg.image = UIImage(named: "warning_icon", in: bundle, compatibleWith: nil)!
+                circleImg.image = loadImage(name: "warning_icon")
                 toastView.backgroundColor = UIColor(named: "yellow_dark", in: bundle, compatibleWith: nil)!
                 break
             case .info:
                 headLabel.text = "Info"
                 headLabel.textColor = UIColor(named: "white_blue", in: bundle, compatibleWith: nil)!
-                circleImg.image = UIImage(named: "info_icon", in: bundle, compatibleWith: nil)!
+                circleImg.image = loadImage(name: "info_icon")
                 toastView.backgroundColor = UIColor(named: "blue_dark", in: bundle, compatibleWith: nil)!
                 break
         }
+    }
+    
+    func loadImage(name: String) -> UIImage? {
+        let podBundle = Bundle(for: MTVibrant.self)
+        if let url = podBundle.url(forResource: "MotionToastView", withExtension: "bundle") {
+            let bundle = Bundle(url: url)
+            return UIImage(named: name, in: bundle, compatibleWith: nil)
+        }
+        print("MotionToastView")
+        return nil
     }
 }
