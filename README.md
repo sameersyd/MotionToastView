@@ -182,7 +182,7 @@ MotionToast_Customisation(header: "Custom Toast", message: "It gives you more cu
                             toastGravity: .bottom, toastCornerRadius: 12, pulseEffect: true)
 ```
 
-#### Checkout Android version of this library <a href="https://github.com/Spikeysanju/MotionToast">Motion Toast</a>
+## Checkout Android version of this library <a href="https://github.com/Spikeysanju/MotionToast">Motion Toast</a>
 
 ## Donation
 If this project helped you reduce time to develop, you can buy me a cup of coffee :) 
