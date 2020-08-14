@@ -23,15 +23,6 @@ class MTPale: UIView {
         sideBarView.layer.cornerRadius = 3
         toastView.layer.cornerRadius = 12
         circleView.layer.cornerRadius = circleView.bounds.size.width/2
-        
-        let pulseAnimation = CABasicAnimation(keyPath: "transform.scale")
-        pulseAnimation.duration = 1
-        pulseAnimation.fromValue = 0.7
-        pulseAnimation.toValue = 1
-        pulseAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
-        pulseAnimation.autoreverses = true
-        pulseAnimation.repeatCount = .greatestFiniteMagnitude
-        circleImg.layer.add(pulseAnimation, forKey: "animateOpacity")
     }
     
     required init?(coder: NSCoder) {
@@ -44,6 +35,17 @@ class MTPale: UIView {
         let viewFromXib = bundle.loadNibNamed("MTPale", owner: self, options: nil)![0] as! UIView
         viewFromXib.frame = self.bounds
         addSubview(viewFromXib)
+    }
+    
+    func addPulseEffect() {
+        let pulseAnimation = CABasicAnimation(keyPath: "transform.scale")
+        pulseAnimation.duration = 1
+        pulseAnimation.fromValue = 0.7
+        pulseAnimation.toValue = 1
+        pulseAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        pulseAnimation.autoreverses = true
+        pulseAnimation.repeatCount = .greatestFiniteMagnitude
+        circleImg.layer.add(pulseAnimation, forKey: "animateOpacity")
     }
     
     func setupViews(toastType: ToastType) {
@@ -85,7 +87,6 @@ class MTPale: UIView {
             let bundle = Bundle(url: url)
             return UIImage(named: name, in: bundle, compatibleWith: nil)
         }
-        print("MotionToastView Image")
         return nil
     }
     
@@ -95,7 +96,6 @@ class MTPale: UIView {
             let bundle = Bundle(url: url)
             return UIColor(named: name, in: bundle, compatibleWith: nil)
         }
-        print("MotionToastView Color")
         return nil
     }
 }

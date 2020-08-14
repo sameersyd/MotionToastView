@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MotionToastView'
-  s.version          = '0.1.7'
-  s.summary          = 'A Beautiful Toast Library for iOS Swift'
+  s.version          = '0.1.8'
+  s.summary          = 'A Beautiful Toast Library for iOS using Swift'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-'A Beautiful Motion Toast Library for iOS Swift'
+'A Beautiful Motion Toast Library for iOS using Swift'
                        DESC
 
   s.homepage         = 'https://github.com/sameersyd/MotionToastView'
