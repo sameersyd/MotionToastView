@@ -17,7 +17,7 @@ A Beautiful Multipurpose Motion Toast Library in iOS using Swift 😍
 ![gif](https://github.com/sameersyd/templates/blob/master/vibrant_light.png)
 
 ## Preview - Dark Pale Toast 🌈
-![gif](https://github.com/sameersyd/templates/blob/master/pale_dark.png)
+![gif](https://github.com/sameersyd/templates/blob/master/pale_dark_.png)
 
 ## Preview - Dark Vibrant Toast 🌈
 ![gif](https://github.com/sameersyd/templates/blob/master/vibrant_dark.png)
@@ -34,11 +34,10 @@ A Beautiful Multipurpose Motion Toast Library in iOS using Swift 😍
     <th>4. Dark Vibrant Toast</th> 
   </tr>
   <tr>
-    <td><img src = "https://github.com/Spikeysanju/Video_templates/blob/master/Toast%20Types-3.png"/></td> 
-    <td><img src = "https://github.com/Spikeysanju/Video_templates/blob/master/Toast%20Types-5.png"/></td>
-    <td><img src = "https://github.com/Spikeysanju/Video_templates/blob/master/Dark%20Toast.png"/></td> 
-    <td><img src = "https://github.com/Spikeysanju/Video_templates/blob/master/Dark%20Color%20Toast.png"/></td> 
-   
+    <td><img src = "https://github.com/sameersyd/templates/blob/master/pale_light.png"/></td> 
+    <td><img src = "https://github.com/sameersyd/templates/blob/master/vibrant_light.png"/></td>
+    <td><img src = "https://github.com/sameersyd/templates/blob/master/pale_dark_.png"/></td> 
+    <td><img src = "https://github.com/sameersyd/templates/blob/master/vibrant_dark.png"/></td> 
   </tr>
 </table>
 
