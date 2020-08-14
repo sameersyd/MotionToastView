@@ -8,7 +8,7 @@
 
 A Beautiful Multipurpose Motion Toast Library in iOS using Swift 😍
 
-![GitHub Cards Preview](https://github.com/sameersyd/templates/blob/master/github_card_.png)
+![GitHub Cards Preview](https://github.com/sameersyd/templates/blob/master/_github_card_.png)
 
 ## Preview - Pale Toast 🌟 
 ![gif](https://github.com/sameersyd/templates/blob/master/pale_light_.png)
