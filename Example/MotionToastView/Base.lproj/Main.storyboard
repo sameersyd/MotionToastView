@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83m-B5-asE">
-                                <rect key="frame" x="3" y="219.5" width="369" height="228"/>
+                                <rect key="frame" x="3" y="189" width="369" height="289"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNT-NJ-rQf">
                                         <rect key="frame" x="109.5" y="0.0" width="150" height="45"/>
@@ -81,16 +81,33 @@
                                             <action selector="infoButt:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4Dx-uE-vjT"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uww-m7-lvU">
+                                        <rect key="frame" x="45" y="244" width="279" height="45"/>
+                                        <color key="backgroundColor" red="0.56862745100000001" green="0.61176470589999998" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="ILu-SJ-ch1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
+                                        <state key="normal" title="Customised Toast">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="customToastButt:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2aB-9o-9ca"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="bpX-xi-gRH" firstAttribute="centerX" secondItem="83m-B5-asE" secondAttribute="centerX" id="95h-k2-Z1a"/>
+                                    <constraint firstItem="Uww-m7-lvU" firstAttribute="top" secondItem="5Z0-d5-01a" secondAttribute="bottom" constant="16" id="DXO-2L-bFE"/>
                                     <constraint firstItem="3Ap-07-C51" firstAttribute="centerX" secondItem="83m-B5-asE" secondAttribute="centerX" id="Dni-n6-lEy"/>
+                                    <constraint firstAttribute="bottom" secondItem="Uww-m7-lvU" secondAttribute="bottom" id="M5i-ws-rqW"/>
                                     <constraint firstItem="bpX-xi-gRH" firstAttribute="top" secondItem="TNT-NJ-rQf" secondAttribute="bottom" constant="16" id="Mwb-Ht-mqx"/>
+                                    <constraint firstItem="Uww-m7-lvU" firstAttribute="leading" secondItem="83m-B5-asE" secondAttribute="leading" constant="45" id="OYO-ep-9KL"/>
                                     <constraint firstItem="5Z0-d5-01a" firstAttribute="centerX" secondItem="83m-B5-asE" secondAttribute="centerX" id="Wy6-1w-ZLp"/>
-                                    <constraint firstAttribute="bottom" secondItem="5Z0-d5-01a" secondAttribute="bottom" id="eLI-dG-98t"/>
                                     <constraint firstItem="3Ap-07-C51" firstAttribute="top" secondItem="bpX-xi-gRH" secondAttribute="bottom" constant="16" id="jac-wi-nTk"/>
                                     <constraint firstItem="TNT-NJ-rQf" firstAttribute="centerX" secondItem="83m-B5-asE" secondAttribute="centerX" id="knK-9M-buT"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uww-m7-lvU" secondAttribute="trailing" constant="45" id="sLH-U2-9P4"/>
                                     <constraint firstItem="TNT-NJ-rQf" firstAttribute="top" secondItem="83m-B5-asE" secondAttribute="top" id="w9c-jI-2MR"/>
                                     <constraint firstItem="5Z0-d5-01a" firstAttribute="top" secondItem="3Ap-07-C51" secondAttribute="bottom" constant="16" id="wSJ-xM-dJD"/>
                                 </constraints>
