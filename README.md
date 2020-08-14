@@ -87,23 +87,27 @@ import MotionToastView
 
 ## Sample Code for - Motion Toast View 🌟 
 
-### Success Toast (Basic)
+### Success Toast
+(Basic)
 ```
 MotionToast(message: "You have successfully completed the trip", toastType: .success)             
 ```
 
-### Error Toast (with corner radius)
+### Error Toast
+(with corner radius)
 ```
 MotionToast(message: "You have failed to complete the trip", toastType: .error, toastCornerRadius: 12)
 ```
 
-### Warning Toast (with duration, style, gravity, pulseEffect)
+### Warning Toast
+(with duration, style, gravity, pulseEffect)
 ```
 MotionToast(message: "You are not in the location. Try again", toastType: .warning, duration: .long, 
               toastStyle: .style_pale, toastGravity: .centre, pulseEffect: false)     
 ```
 
-### Info Toast (with duration, style, gravity)
+### Info Toast
+(with duration, style, gravity)
 ```
 MotionToast(message: "You have failed to complete the trip", toastType: .info, 
               duration: .long, toastStyle: .style_pale, toastGravity: .top)
