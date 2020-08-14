@@ -114,6 +114,7 @@ MotionToast(message: "You have failed to complete the trip", toastType: .info,
 ```
 
 #### Light and Dark mode are set using system preference
+#### toastCornerRadius parameter is only for toast style - vibrant
 
 ## Motion Toast View
 <table style="width:100%">
