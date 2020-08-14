@@ -43,7 +43,7 @@ A Beautiful Multipurpose Motion Toast Library in iOS using Swift 😍
 
 ## About
 
-A Beautiful Multipurpose Motion Toast View in iOS using Swift with full customisation options.
+A Beautiful Multipurpose Motion Toast View in iOS using Swift with full customisation options. The library is developed using Swift 5.
 
 ## Example
 
@@ -56,6 +56,11 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'MotionToastView'
+```
+
+Import MotionToastView in your class
+```ruby
+import MotionToastView
 ```
 
 ## 4️⃣ Toast types
