@@ -8,10 +8,10 @@
 
 A Beautiful Multipurpose Motion Toast Library in iOS using Swift 😍
 
-![GitHub Cards Preview](https://github.com/sameersyd/templates/blob/master/github_card.png)
+![GitHub Cards Preview](https://github.com/sameersyd/templates/blob/master/github_card_.png)
 
 ## Preview - Pale Toast 🌟 
-![gif](https://github.com/sameersyd/templates/blob/master/pale_light.png)
+![gif](https://github.com/sameersyd/templates/blob/master/pale_light_.png)
 
 ## Preview - Vibrant Toast 🌈
 ![gif](https://github.com/sameersyd/templates/blob/master/vibrant_light.png)
@@ -34,7 +34,7 @@ A Beautiful Multipurpose Motion Toast Library in iOS using Swift 😍
     <th>4. Dark Vibrant Toast</th> 
   </tr>
   <tr>
-    <td><img src = "https://github.com/sameersyd/templates/blob/master/pale_light.png"/></td> 
+    <td><img src = "https://github.com/sameersyd/templates/blob/master/pale_light_.png"/></td> 
     <td><img src = "https://github.com/sameersyd/templates/blob/master/vibrant_light.png"/></td>
     <td><img src = "https://github.com/sameersyd/templates/blob/master/pale_dark_.png"/></td> 
     <td><img src = "https://github.com/sameersyd/templates/blob/master/vibrant_dark.png"/></td> 
@@ -116,6 +116,8 @@ MotionToast_Customisation(header: "Custom Toast", message: "It gives you more cu
                             icon_image: UIImage(named: "apple")!, duration: .long, toastStyle: .style_pale, 
                             toastGravity: .bottom, toastCornerRadius: 12, pulseEffect: true)
 ```
+
+Checkout Android version of this library <a href="https://github.com/Spikeysanju/MotionToast">Motion Toast</a>
 
 # Donation
 If this project helped you reduce time to develop, you can buy me a cup of coffee :) 
