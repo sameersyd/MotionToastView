@@ -117,6 +117,59 @@ MotionToast_Customisation(header: "Custom Toast", message: "It gives you more cu
                             toastGravity: .bottom, toastCornerRadius: 12, pulseEffect: true)
 ```
 
+## Motion Toast View
+<table style="width:100%">
+  <tr>
+    <th>Parameter</th>
+    <th>Optional</th> 
+    <th>Default Value</th>
+    <th>Type</th>
+    <th>Values Available</th>
+  </tr>
+  <tr>
+    <td>message</td>
+    <td>false</td>
+    <td>nil</td>
+    <td>String</td>
+    <td>custom</td>
+  </tr>
+  <tr>
+    <td>toastType</td>
+    <td>false</td>
+    <td>nil</td>
+    <td>enum</td>
+    <td>[.success, .error, .warning, .info]</td>
+  </tr>
+  <tr>
+    <td>duration</td>
+    <td>true</td>
+    <td>.short</td>
+    <td>enum</td>
+    <td>[.short, .long]</td>
+  </tr>
+  <tr>
+    <td>toastStyle</td>
+    <td>true</td>
+    <td>.style_vibrant</td>
+    <td>enum</td>
+    <td>[.style_vibrant, .style_pale]</td>
+  </tr>
+  <tr>
+    <td>toastGravity</td>
+    <td>true</td>
+    <td>.bottom</td>
+    <td>enum</td>
+    <td>[.top, .centre, .bottom]</td>
+  </tr>
+  <tr>
+    <td>pulseEffect</td>
+    <td>true</td>
+    <td>true</td>
+    <td>Bool</td>
+    <td>[true, false]</td>
+  </tr>
+</table>
+
 Checkout Android version of this library <a href="https://github.com/Spikeysanju/MotionToast">Motion Toast</a>
 
 # Donation
