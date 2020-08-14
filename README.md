@@ -113,6 +113,7 @@ MotionToast(message: "You have failed to complete the trip", toastType: .info,
               duration: .long, toastStyle: .style_pale, toastGravity: .top)
 ```
 
+## Note:
 #### Light and Dark mode are set using system preference
 #### toastCornerRadius parameter is only for toast style - vibrant
 
