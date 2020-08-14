@@ -111,17 +111,6 @@ MotionToast(message: "You have failed to complete the trip", toastType: .info,
 
 #### Light and Dark mode are set using system preference
 
-## ✍🏻 Want More Customisation?
-```
-MotionToast_Customisation(header: "Custom Toast", message: "It gives you more customisation options.",
-                            headerColor: UIColor(red: 255.0, green: 255.0, blue: 255.0, alpha: 1.0), 
-                            messageColor: UIColor(red: 239.0, green: 239.0, blue: 239.0, alpha: 0.7), 
-                            primary_color: UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.5), 
-                            secondary_color: UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0), 
-                            icon_image: UIImage(named: "apple")!, duration: .long, toastStyle: .style_pale, 
-                            toastGravity: .bottom, toastCornerRadius: 12, pulseEffect: true)
-```
-
 ## Motion Toast View
 <table style="width:100%">
   <tr>
@@ -167,6 +156,13 @@ MotionToast_Customisation(header: "Custom Toast", message: "It gives you more cu
     <td>[.top, .centre, .bottom]</td>
   </tr>
   <tr>
+    <td>toastCornerRadius</td>
+    <td>true</td>
+    <td>0</td>
+    <td>Int</td>
+    <td>custom</td>
+  </tr>
+  <tr>
     <td>pulseEffect</td>
     <td>true</td>
     <td>true</td>
@@ -174,6 +170,17 @@ MotionToast_Customisation(header: "Custom Toast", message: "It gives you more cu
     <td>[true, false]</td>
   </tr>
 </table>
+
+## ✍🏻 Want More Customisation?
+```
+MotionToast_Customisation(header: "Custom Toast", message: "It gives you more customisation options.",
+                            headerColor: UIColor(red: 255.0, green: 255.0, blue: 255.0, alpha: 1.0), 
+                            messageColor: UIColor(red: 239.0, green: 239.0, blue: 239.0, alpha: 0.7), 
+                            primary_color: UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.5), 
+                            secondary_color: UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0), 
+                            icon_image: UIImage(named: "apple")!, duration: .long, toastStyle: .style_pale, 
+                            toastGravity: .bottom, toastCornerRadius: 12, pulseEffect: true)
+```
 
 #### Checkout Android version of this library <a href="https://github.com/Spikeysanju/MotionToast">Motion Toast</a>
 
