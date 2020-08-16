@@ -69,7 +69,7 @@ class MTPale: UIView {
                 circleImg.image = loadImage(name: "warning_icon_white")
                 sideBarView.backgroundColor = UIColor(hex: "F2C94C")
                 circleView.backgroundColor = UIColor(hex: "F2C94C")
-                toastView.backgroundColor = UIColor(hex: "456789")
+                toastView.backgroundColor = loadColor(name: "alpha_yellow_dark")
                 break
             case .info:
                 headLabel.text = "Info"
