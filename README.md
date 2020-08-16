@@ -11,7 +11,7 @@ A Beautiful Multipurpose Motion Toast Library in iOS using Swift 😍
 ![GitHub Cards Preview](https://github.com/sameersyd/templates/blob/master/_github_card_.png)
 
 ## Preview - Vibrant Toast 🌈
-![gif](https://github.com/sameersyd/templates/blob/master/vibrant_vid.mov)
+![gif](https://github.com/sameersyd/templates/blob/master/vibnt.gif)
 
 ## Preview - Pale Toast 🌟 
 ![gif](https://github.com/sameersyd/templates/blob/master/pale_light_.png)
