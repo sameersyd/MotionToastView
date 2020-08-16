@@ -189,7 +189,6 @@ MotionToast_Customisation(header: "Custom Toast", message: "It gives you more cu
 ```
 
 ## Checkout Android version of this library <a href="https://github.com/Spikeysanju/MotionToast">Motion Toast</a>
-###### Inspired from
 
 ## Donation
 If this project helped you reduce time to develop, you can buy me a cup of coffee :) 
