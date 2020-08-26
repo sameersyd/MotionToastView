@@ -53,29 +53,29 @@ class MTPale: UIView {
             case .success:
                 headLabel.text = "Success"
                 circleImg.image = loadImage(name: "success_icon_white")
-                sideBarView.backgroundColor = UIColor(hex: "6FCF97")
-                circleView.backgroundColor = UIColor(hex: "6FCF97")
+                sideBarView.backgroundColor = UIColor(red: 242.0, green: 201.0, blue: 76.0, alpha: 1.0)
+                circleView.backgroundColor = UIColor(red: 242.0, green: 201.0, blue: 76.0, alpha: 1.0)
                 toastView.backgroundColor = loadColor(name: "alpha_green_dark")
                 break
             case .error:
                 headLabel.text = "Error"
                 circleImg.image = loadImage(name: "error_icon_white")
-                sideBarView.backgroundColor = UIColor(hex: "EB5757")
-                circleView.backgroundColor = UIColor(hex: "EB5757")
+                sideBarView.backgroundColor = UIColor(red: 235.0, green: 87.0, blue: 87.0, alpha: 1.0)
+                circleView.backgroundColor = UIColor(red: 235.0, green: 87.0, blue: 87.0, alpha: 1.0)
                 toastView.backgroundColor = loadColor(name: "alpha_red_dark")
                 break
             case .warning:
                 headLabel.text = "Warning"
                 circleImg.image = loadImage(name: "warning_icon_white")
-                sideBarView.backgroundColor = UIColor(hex: "F2C94C")
-                circleView.backgroundColor = UIColor(hex: "F2C94C")
+                sideBarView.backgroundColor = UIColor(red: 242.0, green: 201.0, blue: 76.0, alpha: 1.0)
+                circleView.backgroundColor = UIColor(red: 242.0, green: 201.0, blue: 76.0, alpha: 1.0)
                 toastView.backgroundColor = loadColor(name: "alpha_yellow_dark")
                 break
             case .info:
                 headLabel.text = "Info"
                 circleImg.image = loadImage(name: "info_icon_white")
-                sideBarView.backgroundColor = UIColor(hex: "2F80ED")
-                circleView.backgroundColor = UIColor(hex: "2F80ED")
+                sideBarView.backgroundColor = UIColor(red: 47.0, green: 128.0, blue: 237.0, alpha: 1.0)
+                circleView.backgroundColor = UIColor(red: 47.0, green: 128.0, blue: 237.0, alpha: 1.0)
                 toastView.backgroundColor = loadColor(name: "alpha_blue_dark")
                 break
         }
