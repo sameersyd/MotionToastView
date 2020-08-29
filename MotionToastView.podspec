@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MotionToastView'
-  s.version          = '0.1.9'
+  s.version          = '0.1.10'
   s.summary          = 'A Beautiful Toast Library for iOS using Swift'
 
 # This description is used to generate tags and improve search results.
@@ -22,7 +22,6 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = 'https://github.com/sameersyd/MotionToastView'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'sameersyd' => 'sameer.nwaz@gmail.com' }
   s.source           = { :git => 'https://github.com/sameersyd/MotionToastView.git', :tag => s.version.to_s }
